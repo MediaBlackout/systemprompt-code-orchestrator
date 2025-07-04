@@ -357,6 +357,7 @@ SystemPrompt includes powerful prompt templates for common coding tasks. [→ Fu
 
 - **[Testing Framework](docs/testing-framework.md)** - E2E testing setup and best practices
 - **[Tunnel and Remote Access](docs/tunnel-remote-access.md)** - Cloudflare tunnel setup for internet access
+- **[EC2 Deployment with Nginx](docs/ec2-nginx-guide.md)** - Host the server on an AWS instance with a reverse proxy
 - **[State Persistence](docs/state-persistence.md)** - How tasks and sessions persist across restarts
 - **[Push Notifications](docs/push-notifications.md)** - Mobile push notification integration
 - **[Prompt Templates](docs/prompt-templates.md)** - Pre-built prompt system for common tasks

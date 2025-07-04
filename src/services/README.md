@@ -439,5 +439,6 @@ describe('AgentManager', () => {
 - **Advanced Scheduling**: Priority queues and scheduling
 - **Plugin System**: Extensible agent capabilities
 - **Metrics Dashboard**: Real-time monitoring UI
+- **OpenAI Batching**: Submit multiple chat prompts in one API call for efficiency
 
 This service layer forms the core engine of the SystemPrompt Coding Agent, providing reliable, scalable, and maintainable agent orchestration.

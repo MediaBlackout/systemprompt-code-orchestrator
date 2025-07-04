@@ -9,7 +9,6 @@
 import { createMCPClient, log, TestTracker } from './utils/test-utils.js';
 import type { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 
@@ -37,7 +36,7 @@ async function testTaskLifecycle(): Promise<void> {
       const timestamp = Date.now();
       const testFile = `/tmp/test-task-${timestamp}.txt`;
       
-      const result = await client.callTool({
+      const result: any = await client.callTool({
         name: 'create_task',
         arguments: {
           title: `Test Task Lifecycle ${timestamp}`,
@@ -124,9 +123,7 @@ async function testTaskLifecycle(): Promise<void> {
     const start3 = Date.now();
     try {
       log.info('Updating task to modify file...');
-      const timestamp = Date.now();
-      
-      const result = await client.callTool({
+      const result: any = await client.callTool({
         name: 'update_task',
         arguments: {
           id: taskId,
